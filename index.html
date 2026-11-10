@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#170a12" />
+  <meta name="description" content="A little cinematic Bhai Dooj celebration, made with love." />
+  <title>Roshni Ka Tilak — 3D Bhai Dooj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark">✦</div>
+      <div><div class="brand-title">ROSHNI KA TILAK</div><div class="brand-sub">A little world, made with love</div></div>
+      <button id="soundToggle" class="sound-btn" aria-label="Toggle sound">♫ <span>Sound off</span></button>
+    </header>
+
+    <section class="stage" aria-label="Interactive Bhai Dooj experience">
+      <div class="sky-glow"></div>
+      <canvas id="world" aria-label="Animated festive 3D scene"></canvas>
+      <div class="scene-vignette"></div>
+      <div class="scene-caption" id="sceneCaption">A festival of light, a bond for life</div>
+      <div class="progress-track" id="progressTrack" aria-label="Story progress"></div>
+      <div class="story-card" id="storyCard">
+        <div class="eyebrow" id="stepEyebrow">A LITTLE CELEBRATION</div>
+        <h1 id="storyTitle">Roshni Ka Tilak</h1>
+        <p id="storyText">Some bonds deserve a little universe of their own. Come, let's celebrate yours.</p>
+        <div class="action-row">
+          <button id="backBtn" class="back-btn" hidden aria-label="Previous scene">‹</button>
+          <button id="actionBtn" class="action-btn">Begin the celebration <span>→</span></button>
+        </div>
+      </div>
+      <div class="tap-hint" id="tapHint" hidden>Tap the diya to light it</div>
+      <div class="memory-overlay" id="memoryOverlay" hidden>
+        <button class="close-memory" id="closeMemory" aria-label="Close memory">×</button>
+        <div class="memory-frame"><div class="memory-art" id="memoryArt">✦</div><div class="memory-label" id="memoryLabel">A little memory</div></div>
+        <div class="memory-dots" id="memoryDots"></div>
+      </div>
+    </section>
+    <footer class="footer"><span>Made for the ones who feel like home.</span><span>✦</span></footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
